@@ -1,0 +1,33 @@
+<ion-view view-title="Financeiro">
+  <ion-content>
+    <div class="list">
+
+      <!-- Seletor de semestre -->
+      <label class="item item-input item-select">
+        <div class="input-label">Semestre Letivo</div>
+        <select ng-model="filtro.semestre" ng-options="s for s in semestres"></select>
+      </label>
+
+      <!-- Mensalidades do semestre -->
+      <div class="item item-text-wrap" ng-repeat="m in getMensalidades()">
+        <h2>{{ m.mes }}</h2>
+        <p>Vencimento: {{ m.vencimento | date:'dd/MM/yyyy' }}</p>
+        <p><strong>{{ m.valor | currency }}</strong></p>
+
+        <span class="badge"
+              ng-class="{ 'status-paga': m.status === 'Paga', 'status-a-pagar': m.status === 'A Pagar' }">
+          {{ m.status }}
+        </span>
+
+        <div ng-if="m.status === 'A Pagar'">
+          <p style="font-size: 12px;">{{ m.codigoBarras }}</p>
+          <button class="button button-small button-calm" ng-click="copiarCodigo(m)">
+            <i class="icon ion-clipboard"></i> Copiar Código de Barras
+          </button>
+          <span class="msg-sucesso" ng-show="m.copiado"> Copiado!</span>
+        </div>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>
