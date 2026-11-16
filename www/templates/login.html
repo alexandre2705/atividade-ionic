@@ -1,0 +1,21 @@
+<ion-view view-title="Login" hide-nav-bar="true">
+  <ion-content class="padding">
+    <div class="login-logo">
+      <h1>UCSal</h1>
+      <p>Portal do Aluno</p>
+    </div>
+
+    <div class="list list-inset">
+      <label class="item item-input">
+        <input type="text" placeholder="Matrícula" ng-model="dados.matricula">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="Senha" ng-model="dados.senha">
+      </label>
+    </div>
+
+    <p class="msg-erro" ng-if="erro">{{ erro }}</p>
+
+    <button class="button button-block button-positive" ng-click="entrar()">Entrar</button>
+  </ion-content>
+</ion-view>
