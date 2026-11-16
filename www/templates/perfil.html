@@ -1,0 +1,53 @@
+<ion-view view-title="Atualização Cadastral">
+  <ion-content>
+    <div class="list">
+
+      <div class="item item-divider">Dados institucionais</div>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Nome completo</span>
+        <input type="text" ng-model="form.nome" ng-disabled="true">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Matrícula</span>
+        <input type="text" ng-model="form.matricula" ng-disabled="true">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Curso</span>
+        <input type="text" ng-model="form.curso" ng-disabled="true">
+      </label>
+
+      <div class="item item-divider">Contato</div>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">E-mail pessoal</span>
+        <input type="email" ng-model="form.email">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Telefone / WhatsApp</span>
+        <input type="tel" ng-model="form.telefone">
+      </label>
+
+      <div class="item item-divider">Endereço</div>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">CEP</span>
+        <input type="text" ng-model="form.endereco.cep">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Rua</span>
+        <input type="text" ng-model="form.endereco.rua">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Bairro</span>
+        <input type="text" ng-model="form.endereco.bairro">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Cidade</span>
+        <input type="text" ng-model="form.endereco.cidade">
+      </label>
+    </div>
+
+    <div class="padding">
+      <p class="msg-sucesso" ng-show="salvo">Alterações salvas.</p>
+      <button class="button button-block button-positive" ng-click="salvar()">Salvar Alterações</button>
+    </div>
+  </ion-content>
+</ion-view>
