@@ -1,0 +1,68 @@
+/* Identidade visual UCSal: azul marinho, azul claro e branco */
+:root {
+  --ucsal-azul-marinho: #0a2a5e;
+  --ucsal-azul-claro: #3d8fd6;
+  --ucsal-branco: #ffffff;
+  --ucsal-fundo: #eef4fb;
+  --cor-paga: #2e9e4f;
+  --cor-a-pagar: #f39c12;
+}
+
+/* Barras e botões "positive" do Ionic com as cores da UCSal */
+.bar.bar-positive {
+  background-color: var(--ucsal-azul-marinho);
+  border-color: var(--ucsal-azul-marinho);
+  background-image: none;
+}
+.bar.bar-positive .title,
+.bar.bar-positive .button { color: var(--ucsal-branco); }
+
+.button.button-positive {
+  background-color: var(--ucsal-azul-marinho);
+  border-color: var(--ucsal-azul-marinho);
+  color: var(--ucsal-branco);
+}
+.button.button-calm {
+  background-color: var(--ucsal-azul-claro);
+  border-color: var(--ucsal-azul-claro);
+  color: var(--ucsal-branco);
+}
+.button.button-outline.button-positive {
+  background: transparent;
+  color: var(--ucsal-azul-marinho);
+}
+.button.button-outline.button-positive.active {
+  background-color: var(--ucsal-azul-marinho);
+  color: var(--ucsal-branco);
+}
+
+.has-header, .scroll-content { background-color: var(--ucsal-fundo); }
+
+/* Login */
+.login-logo {
+  text-align: center;
+  color: var(--ucsal-azul-marinho);
+  margin: 30px 0 10px;
+}
+.login-logo h1 { color: var(--ucsal-azul-marinho); font-weight: bold; }
+
+/* Menu lateral */
+.menu-topo {
+  background-color: var(--ucsal-azul-marinho);
+  color: var(--ucsal-branco);
+  padding: 20px 16px;
+}
+.menu-topo h3 { color: var(--ucsal-branco); margin: 0; }
+
+/* Cards de notícias */
+.card img.full-image { width: 100%; }
+.categoria-noticia { color: var(--ucsal-azul-claro); font-weight: bold; }
+.categoria-evento { color: var(--ucsal-azul-marinho); font-weight: bold; }
+
+/* Badges de mensalidade */
+.badge.status-paga { background-color: var(--cor-paga); color: #fff; }
+.badge.status-a-pagar { background-color: var(--cor-a-pagar); color: #fff; }
+
+/* Mensagens */
+.msg-erro { color: #c0392b; text-align: center; padding: 10px; }
+.msg-sucesso { color: var(--cor-paga); font-weight: bold; }
