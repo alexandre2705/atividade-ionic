@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="250" viewBox="0 0 600 250">
+  <rect width="600" height="250" fill="#3d8fd6"/>
+  <rect x="200" y="40" width="200" height="170" rx="10" fill="#ffffff"/>
+  <rect x="200" y="40" width="200" height="45" rx="10" fill="#0a2a5e"/>
+  <text x="300" y="72" font-family="Arial" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">EVENTO</text>
+  <text x="300" y="170" font-family="Arial" font-size="64" font-weight="bold" fill="#0a2a5e" text-anchor="middle">UCSal</text>
+</svg>

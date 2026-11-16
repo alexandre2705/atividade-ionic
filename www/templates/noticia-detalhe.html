@@ -1,0 +1,18 @@
+<ion-view view-title="{{ noticia.categoria }}">
+  <ion-content class="padding">
+    <div class="list card" ng-if="noticia">
+      <div class="item item-image">
+        <img ng-src="{{ noticia.imagem }}" class="full-image">
+      </div>
+      <div class="item item-text-wrap">
+        <h2>{{ noticia.titulo }}</h2>
+        <p>{{ noticia.data | date:'dd/MM/yyyy' }} · {{ noticia.categoria }}</p>
+      </div>
+      <div class="item item-text-wrap">
+        {{ noticia.conteudo }}
+      </div>
+    </div>
+
+    <p class="msg-erro" ng-if="!noticia">Publicação não encontrada.</p>
+  </ion-content>
+</ion-view>
