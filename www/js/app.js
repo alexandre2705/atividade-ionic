@@ -2,7 +2,10 @@
 angular.module('ucsalApp', ['ionic'])
 
   // Rotas (ui-router): cada template ligado ao seu controller
-  .config(function ($stateProvider, $urlRouterProvider) {
+  .config(function ($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+    // Rolagem nativa em todas as plataformas (arrastar com o dedo/mouse no modo celular)
+    $ionicConfigProvider.scrolling.jsScrolling(false);
+
     $stateProvider
       .state('login', {
         url: '/login',
