@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "description": "Portal do Aluno UCSal - Ionic + AngularJS",
   "scripts": {
-    "start": "npx http-server www -p 8100 -c-1"
+    "start": "npx -y http-server www -p 8100 -c-1"
   }
 }

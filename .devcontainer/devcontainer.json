@@ -1,0 +1,9 @@
+{
+  "name": "Portal do Aluno UCSal",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "forwardPorts": [8100],
+  "portsAttributes": {
+    "8100": { "label": "Portal do Aluno", "onAutoForward": "openPreview" }
+  },
+  "postAttachCommand": "npm start"
+}
